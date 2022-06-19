@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import HaproContext from '../context/HaproContext'
+import HaproContext from '../../context/HaproContext'
 import AddHapro from './AddHapro';
 import { Haproitem } from './Haproitem';
 import { useNavigate } from 'react-router-dom'   //extra added
@@ -46,7 +46,7 @@ export const Hapro = () => {
   return (
     <>
 
-    <AddHapro/>
+     {localStorage.getItem('token')?<AddHapro/>:""}
     <div>
         {/* Button trigger modal */}
         <button type="button" ref={ref} className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">

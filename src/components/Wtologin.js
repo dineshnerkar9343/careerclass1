@@ -10,7 +10,7 @@ import { Habout } from './homecomponents/Habout';
 import { Hcourse } from './homecomponents/Hcourse';
 
 
-const Home = () => {
+const Wtologin = () => {
   const context = useContext(HaproContext)
   const acontext = useContext(HaboutContext)
   const mcontext = useContext(HcourseContext)
@@ -27,11 +27,8 @@ const Home = () => {
 <Habout/>
 <Hcourse/>
 
-
-     
-      
   </>
   )
 }
 
-export default Home
+export default Wtologin

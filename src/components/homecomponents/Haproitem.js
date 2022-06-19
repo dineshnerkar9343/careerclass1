@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import HaproContext from '../context/HaproContext'
+import HaproContext from '../../context/HaproContext'
 
 export const Haproitem = (props) => {
 

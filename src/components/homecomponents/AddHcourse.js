@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import HcourseContext from '../context/HcourseContext'
+import HcourseContext from '../../context/HcourseContext'
 
 const AddHcourse = () => {
     

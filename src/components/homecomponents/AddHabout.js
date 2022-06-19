@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import HaboutContext from '../context/HaboutContext'
+import HaboutContext from '../../context/HaboutContext'
 
 const AddHabout = () => {
     

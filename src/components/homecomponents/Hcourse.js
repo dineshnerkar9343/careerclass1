@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import HcourseContext from '../context/HcourseContext'
+import HcourseContext from '../../context/HcourseContext'
 import AddHcourse from './AddHcourse';
 import { Hcourseitem } from './Hcourseitem';
 import { useNavigate } from 'react-router-dom'   //extra added
@@ -46,7 +46,7 @@ export const Hcourse = () => {
   return (
     <>
 
-    <AddHcourse/>
+{localStorage.getItem('token')?<AddHcourse/>:""}
     <div>
         {/* Button trigger modal */}
         <button type="button" ref={ref} className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">

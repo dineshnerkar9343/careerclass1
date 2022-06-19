@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import HaboutContext from '../context/HaboutContext'
+import HaboutContext from '../../context/HaboutContext'
 import AddHabout from './AddHabout';
 import { Haboutitem } from './Haboutitem';
 import { useNavigate } from 'react-router-dom'   //extra added
@@ -46,7 +46,7 @@ export const Habout = () => {
   return (
     <>
 
-    <AddHabout/>
+{localStorage.getItem('token')?<AddHabout/>:""}
     <div>
         {/* Button trigger modal */}
         <button type="button" ref={ref} className="btn btn-primary d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">

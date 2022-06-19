@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import HcourseContext from '../context/HcourseContext'
+import HcourseContext from '../../context/HcourseContext'
 
 export const Hcourseitem = (props) => {
 

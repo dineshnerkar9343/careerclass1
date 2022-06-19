@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import HaboutContext from '../context/HaboutContext'
+import HaboutContext from '../../context/HaboutContext'
 
 export const Haboutitem = (props) => {
 
